@@ -88,8 +88,23 @@ namespace LabExer01_EventDriven
             StudentInfoclass.StudentNum = long.Parse(textBox1.Text);
 
             Form2 form2= new Form2();
+            if (form2.ShowDialog() == DialogResult.OK)
+            {
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox2.Clear();
+                richTextBox1.Clear();
+                textBox3.Clear();
+                textBox6.Clear();
+                textBox1.Clear();
+
+                comboBox1.SelectedIndex = -1;
+
+            }
             form2.Show();
             this.Hide();
+
+
 
         }
 
