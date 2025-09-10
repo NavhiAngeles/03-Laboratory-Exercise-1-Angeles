@@ -129,7 +129,7 @@ namespace LabExer01_EventDriven
                 Form2 frm = new Form2();
                 frm.ShowDialog();
             }
-            catch (Exception ex)
+            catch (FormatException ex)
             {
                 MessageBox.Show("Please fill out the form correctly. " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
