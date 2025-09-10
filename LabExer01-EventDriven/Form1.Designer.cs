@@ -93,6 +93,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(148, 20);
             this.textBox5.TabIndex = 5;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
             // 
@@ -273,9 +274,9 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(318, 312);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 18);
+            this.label3.Size = new System.Drawing.Size(61, 18);
             this.label3.TabIndex = 22;
-            this.label3.Text = "Birthday :";
+            this.label3.Text = "Gender :";
             // 
             // comboBox2
             // 
@@ -317,6 +318,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

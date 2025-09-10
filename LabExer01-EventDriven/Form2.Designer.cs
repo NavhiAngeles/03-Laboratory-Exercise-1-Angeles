@@ -46,6 +46,10 @@
             this.frm2Add = new System.Windows.Forms.Label();
             this.frm2ConNum = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -93,7 +97,7 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox3.Location = new System.Drawing.Point(130, 309);
+            this.textBox3.Location = new System.Drawing.Point(130, 417);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(222, 20);
             this.textBox3.TabIndex = 4;
@@ -101,7 +105,7 @@
             // maskedTextBox4
             // 
             this.maskedTextBox4.BackColor = System.Drawing.Color.BurlyWood;
-            this.maskedTextBox4.Location = new System.Drawing.Point(130, 361);
+            this.maskedTextBox4.Location = new System.Drawing.Point(130, 469);
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(222, 20);
             this.maskedTextBox4.TabIndex = 7;
@@ -109,7 +113,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox4.Location = new System.Drawing.Point(130, 414);
+            this.textBox4.Location = new System.Drawing.Point(130, 522);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(222, 20);
             this.textBox4.TabIndex = 6;
@@ -163,7 +167,7 @@
             this.frm2Age.AutoSize = true;
             this.frm2Age.BackColor = System.Drawing.Color.Transparent;
             this.frm2Age.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2Age.Location = new System.Drawing.Point(43, 311);
+            this.frm2Age.Location = new System.Drawing.Point(43, 419);
             this.frm2Age.Name = "frm2Age";
             this.frm2Age.Size = new System.Drawing.Size(43, 18);
             this.frm2Age.TabIndex = 13;
@@ -185,7 +189,7 @@
             this.frm2Add.AutoSize = true;
             this.frm2Add.BackColor = System.Drawing.Color.Transparent;
             this.frm2Add.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2Add.Location = new System.Drawing.Point(43, 414);
+            this.frm2Add.Location = new System.Drawing.Point(43, 522);
             this.frm2Add.Name = "frm2Add";
             this.frm2Add.Size = new System.Drawing.Size(68, 18);
             this.frm2Add.TabIndex = 15;
@@ -196,7 +200,7 @@
             this.frm2ConNum.AutoSize = true;
             this.frm2ConNum.BackColor = System.Drawing.Color.Transparent;
             this.frm2ConNum.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2ConNum.Location = new System.Drawing.Point(43, 363);
+            this.frm2ConNum.Location = new System.Drawing.Point(43, 471);
             this.frm2ConNum.Name = "frm2ConNum";
             this.frm2ConNum.Size = new System.Drawing.Size(87, 18);
             this.frm2ConNum.TabIndex = 14;
@@ -210,14 +214,52 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Chocolate;
             this.button1.FlatAppearance.BorderSize = 3;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(385, 99);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 256);
+            this.button1.Size = new System.Drawing.Size(74, 390);
             this.button1.TabIndex = 16;
             this.button1.Text = "SUBMIT";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(25, 369);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 18);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Birthday :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(43, 310);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 18);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Gender :";
+            // 
+            // maskedTextBox5
+            // 
+            this.maskedTextBox5.BackColor = System.Drawing.Color.BurlyWood;
+            this.maskedTextBox5.Location = new System.Drawing.Point(130, 367);
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            this.maskedTextBox5.Size = new System.Drawing.Size(222, 20);
+            this.maskedTextBox5.TabIndex = 18;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.BurlyWood;
+            this.textBox5.Location = new System.Drawing.Point(130, 308);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(222, 20);
+            this.textBox5.TabIndex = 17;
             // 
             // Form2
             // 
@@ -225,7 +267,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(466, 476);
+            this.ClientSize = new System.Drawing.Size(500, 613);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.maskedTextBox5);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.frm2Add);
             this.Controls.Add(this.frm2ConNum);
@@ -269,5 +315,9 @@
         private System.Windows.Forms.Label frm2Add;
         private System.Windows.Forms.Label frm2ConNum;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

@@ -20,6 +20,9 @@ namespace LabExer01_EventDriven
         public static long Age = 0;
         public static long ContactNum = 0;
         public static long StudentNum = 0;
+      
+        public static string Gender = " ";
+        public static string Birthday = " ";
 
         public static string GetFirstName(String fname) => FirstName;
 
@@ -36,6 +39,9 @@ namespace LabExer01_EventDriven
         public static long GetContactNum(long contactnum) => ContactNum;
 
         public static long GetStudentNum(long studentnum) => StudentNum;
+
+        public static string GetGender(string gender) => Gender;
+        public static string GetBirthday(string birthday) => Birthday;
 
     }
     

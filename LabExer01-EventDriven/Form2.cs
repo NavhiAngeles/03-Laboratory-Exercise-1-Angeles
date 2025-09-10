@@ -12,7 +12,7 @@ namespace LabExer01_EventDriven
 {
     public partial class Form2 : Form 
     {
-        private StudentInfoclass.DelegateString delProgram, delLastName, delFirstName, delMiddleName, delAddress;
+        private StudentInfoclass.DelegateString delProgram, delLastName, delFirstName, delMiddleName, delAddress, delGender,delBirthday;
         private StudentInfoclass.DelegateNum delAge, delContactNum, delStudentnum;
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,6 +33,8 @@ namespace LabExer01_EventDriven
             delAge = new StudentInfoclass.DelegateNum(StudentInfoclass.GetAge);
             delContactNum = new StudentInfoclass.DelegateNum(StudentInfoclass.GetContactNum);
             delStudentnum = new StudentInfoclass.DelegateNum(StudentInfoclass.GetStudentNum);
+           
+
 
 
 
@@ -44,6 +46,8 @@ namespace LabExer01_EventDriven
             textBox3.Text = delAge(StudentInfoclass.Age).ToString();
             maskedTextBox4.Text = delContactNum(StudentInfoclass.ContactNum).ToString();
             maskedTextBox1.Text = delStudentnum(StudentInfoclass.StudentNum).ToString();
+           
+
 
 
 
