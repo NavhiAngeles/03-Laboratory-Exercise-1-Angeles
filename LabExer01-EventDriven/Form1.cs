@@ -13,7 +13,10 @@ namespace LabExer01_EventDriven
 {
     public partial class Form1 : Form
     {
-
+        private string _FullName;
+        private int _Age;
+        private long _ContactNum;
+        private long _StudentNum;
 
         public Form1()
         {

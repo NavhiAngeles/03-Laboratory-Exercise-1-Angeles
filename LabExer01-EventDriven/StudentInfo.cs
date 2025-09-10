@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabExer01_EventDriven
 {
+
     using System.Windows.Forms;
 
     public class StudenInfoClass {
@@ -34,11 +35,11 @@ namespace LabExer01_EventDriven
 
         public static string GetProgram(string program) => Program;
 
-        public static long GetAge(long age) => Age;
+        //public static long GetAge(long age) => Age;
 
-        public static long GetContactNum(long contactnum) => ContactNum;
+        //public static long GetContactNum(long contactnum) => ContactNum;
 
-        public static long GetStudentNum(long studentnum) => StudentNum;
+        //public static long GetStudentNum(long studentnum) => StudentNum;
 
         public static string GetGender(string gender) => Gender;
         public static string GetBirthday(string birthday) => Birthday;
