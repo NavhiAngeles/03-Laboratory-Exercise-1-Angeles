@@ -47,12 +47,16 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox1.Location = new System.Drawing.Point(77, 219);
+            this.textBox1.Location = new System.Drawing.Point(77, 207);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(148, 20);
             this.textBox1.TabIndex = 0;
@@ -61,7 +65,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox2.Location = new System.Drawing.Point(77, 271);
+            this.textBox2.Location = new System.Drawing.Point(77, 259);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(148, 20);
             this.textBox2.TabIndex = 2;
@@ -69,7 +73,7 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox3.Location = new System.Drawing.Point(77, 324);
+            this.textBox3.Location = new System.Drawing.Point(77, 312);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(46, 20);
             this.textBox3.TabIndex = 3;
@@ -77,7 +81,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox4.Location = new System.Drawing.Point(248, 271);
+            this.textBox4.Location = new System.Drawing.Point(248, 259);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(148, 20);
             this.textBox4.TabIndex = 4;
@@ -85,7 +89,7 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox5.Location = new System.Drawing.Point(407, 271);
+            this.textBox5.Location = new System.Drawing.Point(407, 259);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(148, 20);
             this.textBox5.TabIndex = 5;
@@ -93,7 +97,7 @@
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox6.Location = new System.Drawing.Point(248, 324);
+            this.textBox6.Location = new System.Drawing.Point(146, 312);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(148, 20);
             this.textBox6.TabIndex = 6;
@@ -105,7 +109,7 @@
             this.frm1StudNum.BackColor = System.Drawing.Color.Transparent;
             this.frm1StudNum.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm1StudNum.ForeColor = System.Drawing.Color.Black;
-            this.frm1StudNum.Location = new System.Drawing.Point(74, 197);
+            this.frm1StudNum.Location = new System.Drawing.Point(74, 185);
             this.frm1StudNum.Name = "frm1StudNum";
             this.frm1StudNum.Size = new System.Drawing.Size(88, 18);
             this.frm1StudNum.TabIndex = 7;
@@ -117,7 +121,7 @@
             this.frm1Prog.BackColor = System.Drawing.Color.Transparent;
             this.frm1Prog.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm1Prog.ForeColor = System.Drawing.Color.Black;
-            this.frm1Prog.Location = new System.Drawing.Point(246, 194);
+            this.frm1Prog.Location = new System.Drawing.Point(246, 183);
             this.frm1Prog.Name = "frm1Prog";
             this.frm1Prog.Size = new System.Drawing.Size(68, 18);
             this.frm1Prog.TabIndex = 8;
@@ -130,7 +134,7 @@
             this.frm1LN.BackColor = System.Drawing.Color.Transparent;
             this.frm1LN.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm1LN.ForeColor = System.Drawing.Color.Black;
-            this.frm1LN.Location = new System.Drawing.Point(74, 247);
+            this.frm1LN.Location = new System.Drawing.Point(74, 235);
             this.frm1LN.Name = "frm1LN";
             this.frm1LN.Size = new System.Drawing.Size(80, 18);
             this.frm1LN.TabIndex = 9;
@@ -142,7 +146,7 @@
             this.frm1FN.BackColor = System.Drawing.Color.Transparent;
             this.frm1FN.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm1FN.ForeColor = System.Drawing.Color.Black;
-            this.frm1FN.Location = new System.Drawing.Point(245, 247);
+            this.frm1FN.Location = new System.Drawing.Point(245, 235);
             this.frm1FN.Name = "frm1FN";
             this.frm1FN.Size = new System.Drawing.Size(82, 18);
             this.frm1FN.TabIndex = 10;
@@ -154,7 +158,7 @@
             this.frm1MN.BackColor = System.Drawing.Color.Transparent;
             this.frm1MN.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm1MN.ForeColor = System.Drawing.Color.Black;
-            this.frm1MN.Location = new System.Drawing.Point(404, 247);
+            this.frm1MN.Location = new System.Drawing.Point(404, 235);
             this.frm1MN.Name = "frm1MN";
             this.frm1MN.Size = new System.Drawing.Size(99, 18);
             this.frm1MN.TabIndex = 11;
@@ -166,7 +170,7 @@
             this.frm1Age.BackColor = System.Drawing.Color.Transparent;
             this.frm1Age.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm1Age.ForeColor = System.Drawing.Color.Black;
-            this.frm1Age.Location = new System.Drawing.Point(74, 302);
+            this.frm1Age.Location = new System.Drawing.Point(74, 290);
             this.frm1Age.Name = "frm1Age";
             this.frm1Age.Size = new System.Drawing.Size(40, 18);
             this.frm1Age.TabIndex = 12;
@@ -179,7 +183,7 @@
             this.frm1ConNum.BackColor = System.Drawing.Color.Transparent;
             this.frm1ConNum.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm1ConNum.ForeColor = System.Drawing.Color.Black;
-            this.frm1ConNum.Location = new System.Drawing.Point(245, 301);
+            this.frm1ConNum.Location = new System.Drawing.Point(143, 289);
             this.frm1ConNum.Name = "frm1ConNum";
             this.frm1ConNum.Size = new System.Drawing.Size(87, 18);
             this.frm1ConNum.TabIndex = 13;
@@ -191,7 +195,7 @@
             this.frm1Add.BackColor = System.Drawing.Color.Transparent;
             this.frm1Add.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm1Add.ForeColor = System.Drawing.Color.Black;
-            this.frm1Add.Location = new System.Drawing.Point(74, 352);
+            this.frm1Add.Location = new System.Drawing.Point(74, 389);
             this.frm1Add.Name = "frm1Add";
             this.frm1Add.Size = new System.Drawing.Size(65, 18);
             this.frm1Add.TabIndex = 14;
@@ -201,7 +205,7 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.BurlyWood;
-            this.richTextBox1.Location = new System.Drawing.Point(77, 382);
+            this.richTextBox1.Location = new System.Drawing.Point(77, 419);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(478, 118);
             this.richTextBox1.TabIndex = 15;
@@ -211,7 +215,7 @@
             // 
             this.comboBox1.BackColor = System.Drawing.Color.BurlyWood;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(249, 216);
+            this.comboBox1.Location = new System.Drawing.Point(249, 204);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(278, 21);
             this.comboBox1.TabIndex = 16;
@@ -223,7 +227,7 @@
             this.button1.FlatAppearance.BorderSize = 5;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(249, 519);
+            this.button1.Location = new System.Drawing.Point(249, 556);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 55);
             this.button1.TabIndex = 17;
@@ -242,13 +246,57 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "REGISTRATION FORM";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(74, 355);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 18);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Birthday :";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(173, 355);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePicker1.TabIndex = 21;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(318, 312);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 18);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Birthday :";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.Color.BurlyWood;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(391, 312);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(130, 21);
+            this.comboBox2.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(666, 631);
+            this.ClientSize = new System.Drawing.Size(704, 776);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
@@ -294,6 +342,10 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 
