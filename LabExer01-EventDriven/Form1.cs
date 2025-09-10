@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,6 +19,7 @@ namespace LabExer01_EventDriven
         private long _ContactNum;
         private long _StudentNum;
 
+
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +30,7 @@ namespace LabExer01_EventDriven
                 "BS in Accountancy",
                 "BS in Hospitality Management",
                 "BS in Tourism Management" };
-         
+
             for (int i = 0; i < 6; i++)
             {
                 comboBox1.Items.Add(ListOfProgram[i].ToString());
@@ -42,42 +44,47 @@ namespace LabExer01_EventDriven
             {
                 comboBox2.Items.Add(ListOfProgram[i].ToString());
             }
-
-
-            //comboBox1.Items.Add("Bachelor of Science in Computer Science");
-            //comboBox1.Items.Add("Bachelor of Science in Information Technology");
-            //comboBox1.Items.Add("Bachelor of Science in Tourism Management");
-            //comboBox1.Items.Add("Bachelor of Science in Bussiness Administration");
-            //comboBox1.Items.Add("Bachelor of Science in Psychology");
-            //comboBox1.Items.Add("Bachelor of Science in MultiMedia Arts");
-            //comboBox1.Items.Add("Bachelor of Science in Secondary Education");
-            //comboBox1.Items.Add("Bachelor of Science in Hospitality Management");
-            //comboBox1.Items.Add("Bachelor of Science in Accountancy");
-            //comboBox1.Items.Add("Bachelor of Science in Civil Engineering");
-            //comboBox1.Items.Add("Bachelor of Science in Architecture");
-            //comboBox1.Items.Add("Bachelor of Science in Electronics Engineering");
-            //comboBox1.Items.Add("Bachelor of Science in Electrical Engineering");
-            //comboBox1.Items.Add("Bachelor of Science in Mechanical Engineering");
-            //comboBox1.Items.Add("Bachelor of Science in Chemical Engineering");
-            //comboBox1.Items.Add("Bachelor of Science in Agriculture");
-            //comboBox1.Items.Add("Bachelor of Science in Fisheries");
-            //comboBox1.Items.Add("Bachelor of Science in Criminology");
-            //comboBox1.Items.Add("Bachelor of Science in Agriculture and Biosystems Engineering");
-            //comboBox1.Items.Add("Bachelor of Science in Food Technology");
-            //comboBox1.Items.Add("Bachelor of Science in Environmental Science");
-            //comboBox1.Items.Add("Bachelor of Science in Geology");
-            //comboBox1.Items.Add("Bachelor of Science in Marine Biology");
-            //comboBox1.Items.Add("Bachelor of Science in Nursing");
-            //comboBox1.Items.Add("Bachelor of Science in Pharmacy");
-            //comboBox1.Items.Add("Bachelor of Science in Radiologic Technology");
-            //comboBox1.Items.Add("Bachelor of Science in Physical Therapy");
-            //comboBox1.Items.Add("Bachelor of Science in Occupational Therapy");
-            //comboBox1.Items.Add("Bachelor of Science in Veterinary Medicine");
-            //comboBox1.Items.Add("Bachelor of Science in Agriculture and Food Technology");
-            //comboBox1.Items.Add("Bachelor of Science in Data Science");
-            //comboBox2.Items.Add("Male");
-            //comboBox2.Items.Add("Female");
         }
+        public long StudentNumber(string studNum)
+        {
+
+            _StudentNum = long.Parse(studNum);
+
+            return _StudentNum;
+        }
+
+        public long ContactNo(string Contact)
+        {
+            if (Regex.IsMatch(Contact, @"^[0-9]{10,11}$"))
+            {
+                _ContactNum = long.Parse(Contact);
+            }
+
+            return _ContactNum;
+        }
+
+        public string FullName(string LastName, string FirstName, string MiddleInitial)
+        {
+            if (Regex.IsMatch(LastName, @"^[a-zA-Z]+$") || Regex.IsMatch(FirstName, @"^[a-zA-Z]+$") || Regex.IsMatch(MiddleInitial, @"^[a-zA-Z]+$"))
+            {
+                _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
+            }
+
+            return _FullName;
+        }
+
+        public int Age(string age)
+        {
+            if (Regex.IsMatch(age, @"^[0-9]{1,3}$"))
+            {
+                _Age = Int32.Parse(age);
+            }
+
+            return _Age;
+        }
+ 
+    
+
 
     
 
@@ -108,32 +115,58 @@ namespace LabExer01_EventDriven
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StudentInfoclass.FirstName = textBox4.Text;
-            StudentInfoclass.LastName = textBox2.Text;
-            StudentInfoclass.MiddleName = textBox5.Text;
-            StudentInfoclass.Address = richTextBox1.Text;
-            StudentInfoclass.Program = comboBox1.Text;
-            StudentInfoclass.Age = long.Parse(textBox3.Text);
-            StudentInfoclass.ContactNum = long.Parse(textBox6.Text);
-            StudentInfoclass.StudentNum = long.Parse(textBox1.Text);
-           
+            StudentInfoclass.SetFullName = FullName(textBox2.Text, textBox4.Text, textBox5.Text);
+            StudentInfoclass.SetStudentNum = StudentNumber(textBox1.Text);
+            StudentInfoclass.SetProgram = comboBox1.Text;
+            StudentInfoclass.SetGender = comboBox2.Text;
+            StudentInfoclass.SetContactNum = ContactNo(textBox6.Text);
+            StudentInfoclass.SetAge = Age(textBox3.Text);
+            StudentInfoclass.SetBirthDay = dateTimePicker1.Value.ToString("yyyyMM-dd");
 
-            Form2 form2= new Form2();
-            if (form2.ShowDialog() == DialogResult.OK)
-            {
-                textBox4.Clear();
-                textBox5.Clear();
-                textBox2.Clear();
-                richTextBox1.Clear();
-                textBox3.Clear();
-                textBox6.Clear();
-                textBox1.Clear();
+            Form2 frm = new Form2();
+            frm.ShowDialog();
 
-                comboBox1.SelectedIndex = -1;
 
-            }
-            form2.Show();
-            this.Hide();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //    studentinfoclass.firstname = textbox4.text;
+            //    studentinfoclass.lastname = textbox2.text;
+            //    studentinfoclass.middlename = textbox5.text;
+            //    studentinfoclass.address = richtextbox1.text;
+            //    studentinfoclass.program = combobox1.text;
+            //    studentinfoclass.age = long.parse(textbox3.text);
+            //    studentinfoclass.contactnum = long.parse(textbox6.text);
+            //    studentinfoclass.studentnum = long.parse(textbox1.text);
+
+
+            //    form2 form2 = new form2();
+            //    if (form2.showdialog() == dialogresult.ok)
+            //    {
+            //        textbox4.clear();
+            //        textbox5.clear();
+            //        textbox2.clear();
+            //        richtextbox1.clear();
+            //        textbox3.clear();
+            //        textbox6.clear();
+            //        textbox1.clear();
+
+            //        combobox1.selectedindex = -1;
+
+            //    }
+            //    form2.show();
+            //    this.hide();
 
 
 

@@ -30,19 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.studnum = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.frm2StudNum = new System.Windows.Forms.Label();
             this.frm2Prog = new System.Windows.Forms.Label();
-            this.frm2FN = new System.Windows.Forms.Label();
             this.frm2LN = new System.Windows.Forms.Label();
             this.frm2Age = new System.Windows.Forms.Label();
-            this.frm2MN = new System.Windows.Forms.Label();
             this.frm2Add = new System.Windows.Forms.Label();
             this.frm2ConNum = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -60,14 +56,14 @@
             this.textBox1.Size = new System.Drawing.Size(222, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // maskedTextBox1
+            // studnum
             // 
-            this.maskedTextBox1.BackColor = System.Drawing.Color.BurlyWood;
-            this.maskedTextBox1.Location = new System.Drawing.Point(130, 34);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(222, 20);
-            this.maskedTextBox1.TabIndex = 1;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.studnum.BackColor = System.Drawing.Color.BurlyWood;
+            this.studnum.Location = new System.Drawing.Point(130, 34);
+            this.studnum.Name = "studnum";
+            this.studnum.Size = new System.Drawing.Size(222, 20);
+            this.studnum.TabIndex = 1;
+            this.studnum.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // maskedTextBox2
             // 
@@ -78,26 +74,10 @@
             this.maskedTextBox2.TabIndex = 3;
             this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox2.Location = new System.Drawing.Point(130, 192);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 20);
-            this.textBox2.TabIndex = 2;
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.BackColor = System.Drawing.Color.BurlyWood;
-            this.maskedTextBox3.Location = new System.Drawing.Point(130, 251);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(222, 20);
-            this.maskedTextBox3.TabIndex = 5;
-            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox3.Location = new System.Drawing.Point(130, 417);
+            this.textBox3.Location = new System.Drawing.Point(130, 301);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(222, 20);
             this.textBox3.TabIndex = 4;
@@ -105,7 +85,7 @@
             // maskedTextBox4
             // 
             this.maskedTextBox4.BackColor = System.Drawing.Color.BurlyWood;
-            this.maskedTextBox4.Location = new System.Drawing.Point(130, 469);
+            this.maskedTextBox4.Location = new System.Drawing.Point(130, 353);
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(222, 20);
             this.maskedTextBox4.TabIndex = 7;
@@ -113,7 +93,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox4.Location = new System.Drawing.Point(130, 522);
+            this.textBox4.Location = new System.Drawing.Point(130, 406);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(222, 20);
             this.textBox4.TabIndex = 6;
@@ -140,17 +120,6 @@
             this.frm2Prog.TabIndex = 9;
             this.frm2Prog.Text = "Program :";
             // 
-            // frm2FN
-            // 
-            this.frm2FN.AutoSize = true;
-            this.frm2FN.BackColor = System.Drawing.Color.Transparent;
-            this.frm2FN.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2FN.Location = new System.Drawing.Point(43, 194);
-            this.frm2FN.Name = "frm2FN";
-            this.frm2FN.Size = new System.Drawing.Size(82, 18);
-            this.frm2FN.TabIndex = 11;
-            this.frm2FN.Text = "First Name :";
-            // 
             // frm2LN
             // 
             this.frm2LN.AutoSize = true;
@@ -158,38 +127,27 @@
             this.frm2LN.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frm2LN.Location = new System.Drawing.Point(43, 138);
             this.frm2LN.Name = "frm2LN";
-            this.frm2LN.Size = new System.Drawing.Size(83, 18);
+            this.frm2LN.Size = new System.Drawing.Size(82, 18);
             this.frm2LN.TabIndex = 10;
-            this.frm2LN.Text = "Last Name : ";
+            this.frm2LN.Text = "Full Name : ";
             // 
             // frm2Age
             // 
             this.frm2Age.AutoSize = true;
             this.frm2Age.BackColor = System.Drawing.Color.Transparent;
             this.frm2Age.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2Age.Location = new System.Drawing.Point(43, 419);
+            this.frm2Age.Location = new System.Drawing.Point(43, 303);
             this.frm2Age.Name = "frm2Age";
             this.frm2Age.Size = new System.Drawing.Size(43, 18);
             this.frm2Age.TabIndex = 13;
             this.frm2Age.Text = "Age : ";
-            // 
-            // frm2MN
-            // 
-            this.frm2MN.AutoSize = true;
-            this.frm2MN.BackColor = System.Drawing.Color.Transparent;
-            this.frm2MN.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2MN.Location = new System.Drawing.Point(25, 253);
-            this.frm2MN.Name = "frm2MN";
-            this.frm2MN.Size = new System.Drawing.Size(99, 18);
-            this.frm2MN.TabIndex = 12;
-            this.frm2MN.Text = "Middle Name :";
             // 
             // frm2Add
             // 
             this.frm2Add.AutoSize = true;
             this.frm2Add.BackColor = System.Drawing.Color.Transparent;
             this.frm2Add.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2Add.Location = new System.Drawing.Point(43, 522);
+            this.frm2Add.Location = new System.Drawing.Point(43, 406);
             this.frm2Add.Name = "frm2Add";
             this.frm2Add.Size = new System.Drawing.Size(68, 18);
             this.frm2Add.TabIndex = 15;
@@ -200,7 +158,7 @@
             this.frm2ConNum.AutoSize = true;
             this.frm2ConNum.BackColor = System.Drawing.Color.Transparent;
             this.frm2ConNum.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2ConNum.Location = new System.Drawing.Point(43, 471);
+            this.frm2ConNum.Location = new System.Drawing.Point(43, 355);
             this.frm2ConNum.Name = "frm2ConNum";
             this.frm2ConNum.Size = new System.Drawing.Size(87, 18);
             this.frm2ConNum.TabIndex = 14;
@@ -228,7 +186,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 369);
+            this.label1.Location = new System.Drawing.Point(25, 253);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 18);
             this.label1.TabIndex = 20;
@@ -239,7 +197,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 310);
+            this.label2.Location = new System.Drawing.Point(43, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 18);
             this.label2.TabIndex = 19;
@@ -248,7 +206,7 @@
             // maskedTextBox5
             // 
             this.maskedTextBox5.BackColor = System.Drawing.Color.BurlyWood;
-            this.maskedTextBox5.Location = new System.Drawing.Point(130, 367);
+            this.maskedTextBox5.Location = new System.Drawing.Point(130, 251);
             this.maskedTextBox5.Name = "maskedTextBox5";
             this.maskedTextBox5.Size = new System.Drawing.Size(222, 20);
             this.maskedTextBox5.TabIndex = 18;
@@ -256,7 +214,7 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox5.Location = new System.Drawing.Point(130, 308);
+            this.textBox5.Location = new System.Drawing.Point(130, 192);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(222, 20);
             this.textBox5.TabIndex = 17;
@@ -276,18 +234,14 @@
             this.Controls.Add(this.frm2Add);
             this.Controls.Add(this.frm2ConNum);
             this.Controls.Add(this.frm2Age);
-            this.Controls.Add(this.frm2MN);
-            this.Controls.Add(this.frm2FN);
             this.Controls.Add(this.frm2LN);
             this.Controls.Add(this.frm2Prog);
             this.Controls.Add(this.frm2StudNum);
             this.Controls.Add(this.maskedTextBox4);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.maskedTextBox3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.studnum);
             this.Controls.Add(this.textBox1);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -299,19 +253,15 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox studnum;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label frm2StudNum;
         private System.Windows.Forms.Label frm2Prog;
-        private System.Windows.Forms.Label frm2FN;
         private System.Windows.Forms.Label frm2LN;
         private System.Windows.Forms.Label frm2Age;
-        private System.Windows.Forms.Label frm2MN;
         private System.Windows.Forms.Label frm2Add;
         private System.Windows.Forms.Label frm2ConNum;
         private System.Windows.Forms.Button button1;
