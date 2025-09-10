@@ -33,7 +33,7 @@
             this.studnum = new System.Windows.Forms.MaskedTextBox();
             this.FullName = new System.Windows.Forms.MaskedTextBox();
             this.age = new System.Windows.Forms.TextBox();
-            this.contactnum = new System.Windows.Forms.MaskedTextBox();
+            this.numberTo = new System.Windows.Forms.MaskedTextBox();
             this.frm2StudNum = new System.Windows.Forms.Label();
             this.frm2Prog = new System.Windows.Forms.Label();
             this.frm2LN = new System.Windows.Forms.Label();
@@ -80,13 +80,13 @@
             this.age.Size = new System.Drawing.Size(222, 20);
             this.age.TabIndex = 4;
             // 
-            // contactnum
+            // numberTo
             // 
-            this.contactnum.BackColor = System.Drawing.Color.BurlyWood;
-            this.contactnum.Location = new System.Drawing.Point(130, 353);
-            this.contactnum.Name = "contactnum";
-            this.contactnum.Size = new System.Drawing.Size(222, 20);
-            this.contactnum.TabIndex = 7;
+            this.numberTo.BackColor = System.Drawing.Color.BurlyWood;
+            this.numberTo.Location = new System.Drawing.Point(130, 353);
+            this.numberTo.Name = "numberTo";
+            this.numberTo.Size = new System.Drawing.Size(222, 20);
+            this.numberTo.TabIndex = 7;
             // 
             // frm2StudNum
             // 
@@ -215,7 +215,7 @@
             this.Controls.Add(this.frm2LN);
             this.Controls.Add(this.frm2Prog);
             this.Controls.Add(this.frm2StudNum);
-            this.Controls.Add(this.contactnum);
+            this.Controls.Add(this.numberTo);
             this.Controls.Add(this.age);
             this.Controls.Add(this.FullName);
             this.Controls.Add(this.studnum);
@@ -233,7 +233,7 @@
         private System.Windows.Forms.MaskedTextBox studnum;
         private System.Windows.Forms.MaskedTextBox FullName;
         private System.Windows.Forms.TextBox age;
-        private System.Windows.Forms.MaskedTextBox contactnum;
+        private System.Windows.Forms.MaskedTextBox numberTo;
         private System.Windows.Forms.Label frm2StudNum;
         private System.Windows.Forms.Label frm2Prog;
         private System.Windows.Forms.Label frm2LN;

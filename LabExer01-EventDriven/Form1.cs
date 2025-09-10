@@ -35,14 +35,15 @@ namespace LabExer01_EventDriven
             {
                 comboBox1.Items.Add(ListOfProgram[i].ToString());
             }
+
             string[] ListOfGender = new string[]{
                 "Male",
                 "Female",
                 };
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 2; i++)
             {
-                comboBox2.Items.Add(ListOfProgram[i].ToString());
+                comboBox2.Items.Add(ListOfGender[i].ToString());
             }
         }
         public long StudentNumber(string studNum)
@@ -115,16 +116,23 @@ namespace LabExer01_EventDriven
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Studentinfo.SetFullName = FullName(textBox2.Text, textBox4.Text, textBox5.Text);
-            Studentinfo.SetStudentNum = (int)StudentNumber(textBox1.Text);
-            Studentinfo.SetProgram = comboBox1.Text;
-            Studentinfo.SetGender = comboBox2.Text;
-            Studentinfo.SetContactNum =(int)ContactNo(textBox6.Text);
-            Studentinfo.SetAge = Age(textBox3.Text);
-            Studentinfo.SetBirthDay = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            try
+            {
+                Studentinfo.SetFullName = FullName(textBox2.Text, textBox4.Text, textBox5.Text);
+                Studentinfo.SetStudentNum = (int)StudentNumber(textBox1.Text);
+                Studentinfo.SetProgram = comboBox1.Text;
+                Studentinfo.SetGender = comboBox2.Text;
+                Studentinfo.SetContactNum = (int)ContactNo(textBox6.Text);
+                Studentinfo.SetAge = Age(textBox3.Text);
+                Studentinfo.SetBirthDay = dateTimePicker1.Value.ToString("yyyy-MM-dd");
 
-            Form2 frm = new Form2();
-            frm.ShowDialog();
+                Form2 frm = new Form2();
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please fill out the form correctly. " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
 
 

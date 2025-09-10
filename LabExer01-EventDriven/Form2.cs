@@ -14,13 +14,7 @@ namespace LabExer01_EventDriven
     {
 
 
-        studnum.Text = StudentInfoclass.SetStudentNo.ToString();
-        textBox1.Text = StudentInfoclass.SetFullName;
-        lblProgram.Text = StudentInfoclass.SetProgram;
-        bday.Text = StudentInfoclass.SetBirthDay;
-        gender.Text = StudentInfoclass.SetGender;
-        contactnum.Text = StudentInfoclass.SetContactNo.ToString();
-        age.Text = StudentInfoclass.SetAge.ToString();
+        
 
 
         //private StudentInfoclass.DelegateString delProgram, delLastName, delFirstName, delMiddleName, delAddress, delGender, delBirthday;
@@ -36,6 +30,21 @@ namespace LabExer01_EventDriven
         public Form2()
         {
             InitializeComponent();
+            studnum.Text = Studentinfo.SetStudentNum.ToString();
+            FullName.Text = Studentinfo.SetFullName;
+            textBox1.Text = Studentinfo.SetProgram;
+            bday.Text = Studentinfo.SetBirthDay;
+            numberTo.Text = Studentinfo.SetContactNum.ToString();
+            age.Text = Studentinfo.SetAge.ToString();
+            gender.Text = Studentinfo.SetGender;
+
+
+
+
+
+
+
+
             //delProgram = new StudentInfoclass.DelegateString(StudentInfoclass.GetProgram);
             //delLastName = new StudentInfoclass.DelegateString(StudentInfoclass.GetLastName);
             //delFirstName = new StudentInfoclass.DelegateString(StudentInfoclass.GetFirstName);
