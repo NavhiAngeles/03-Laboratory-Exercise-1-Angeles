@@ -42,8 +42,6 @@
             this.frm1MN = new System.Windows.Forms.Label();
             this.frm1Age = new System.Windows.Forms.Label();
             this.frm1ConNum = new System.Windows.Forms.Label();
-            this.frm1Add = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -190,28 +188,6 @@
             this.frm1ConNum.TabIndex = 13;
             this.frm1ConNum.Text = "Contact No. :";
             // 
-            // frm1Add
-            // 
-            this.frm1Add.AutoSize = true;
-            this.frm1Add.BackColor = System.Drawing.Color.Transparent;
-            this.frm1Add.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm1Add.ForeColor = System.Drawing.Color.Black;
-            this.frm1Add.Location = new System.Drawing.Point(74, 389);
-            this.frm1Add.Name = "frm1Add";
-            this.frm1Add.Size = new System.Drawing.Size(65, 18);
-            this.frm1Add.TabIndex = 14;
-            this.frm1Add.Text = "Address :";
-            this.frm1Add.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.BurlyWood;
-            this.richTextBox1.Location = new System.Drawing.Point(77, 419);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(478, 118);
-            this.richTextBox1.TabIndex = 15;
-            this.richTextBox1.Text = "";
-            // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.BurlyWood;
@@ -228,7 +204,7 @@
             this.button1.FlatAppearance.BorderSize = 5;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(249, 556);
+            this.button1.Location = new System.Drawing.Point(248, 417);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 55);
             this.button1.TabIndex = 17;
@@ -293,7 +269,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(704, 776);
+            this.ClientSize = new System.Drawing.Size(673, 591);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
@@ -301,8 +277,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.frm1Add);
             this.Controls.Add(this.frm1ConNum);
             this.Controls.Add(this.frm1Age);
             this.Controls.Add(this.frm1MN);
@@ -339,8 +313,6 @@
         private System.Windows.Forms.Label frm1MN;
         private System.Windows.Forms.Label frm1Age;
         private System.Windows.Forms.Label frm1ConNum;
-        private System.Windows.Forms.Label frm1Add;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;

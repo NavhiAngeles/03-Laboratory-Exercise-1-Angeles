@@ -10,15 +10,15 @@ namespace LabExer01_EventDriven
     using System.Windows.Forms;
 
 
-    public class StudenInfoClass
+    public class Studentinfo
     {
-        public int SetStudentNo = 0;
-        public int SetContactno = 0;
-        public string SetProgram = " ";
-        public string SetGender = " ";
-        public string SetBirthDay = " ";
-        public string SetFullName = " ";
-        public int SetAge = 0;
+        static public int SetStudentNum = 0;
+        static public int SetContactNum = 0;
+        static public string SetProgram = " ";
+        static public string SetGender = " ";
+        static public string SetBirthDay = " ";
+        static public string SetFullName = " ";
+        static public int SetAge = 0;
 
 
         //    public delegate long DelegateNum(long number);

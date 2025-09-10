@@ -31,21 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.studnum = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.FullName = new System.Windows.Forms.MaskedTextBox();
+            this.age = new System.Windows.Forms.TextBox();
+            this.contactnum = new System.Windows.Forms.MaskedTextBox();
             this.frm2StudNum = new System.Windows.Forms.Label();
             this.frm2Prog = new System.Windows.Forms.Label();
             this.frm2LN = new System.Windows.Forms.Label();
             this.frm2Age = new System.Windows.Forms.Label();
-            this.frm2Add = new System.Windows.Forms.Label();
             this.frm2ConNum = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.bday = new System.Windows.Forms.MaskedTextBox();
+            this.gender = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -65,38 +63,30 @@
             this.studnum.TabIndex = 1;
             this.studnum.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // maskedTextBox2
+            // FullName
             // 
-            this.maskedTextBox2.BackColor = System.Drawing.Color.BurlyWood;
-            this.maskedTextBox2.Location = new System.Drawing.Point(130, 138);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(222, 20);
-            this.maskedTextBox2.TabIndex = 3;
-            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
+            this.FullName.BackColor = System.Drawing.Color.BurlyWood;
+            this.FullName.Location = new System.Drawing.Point(130, 138);
+            this.FullName.Name = "FullName";
+            this.FullName.Size = new System.Drawing.Size(222, 20);
+            this.FullName.TabIndex = 3;
+            this.FullName.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
-            // textBox3
+            // age
             // 
-            this.textBox3.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox3.Location = new System.Drawing.Point(130, 301);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(222, 20);
-            this.textBox3.TabIndex = 4;
+            this.age.BackColor = System.Drawing.Color.BurlyWood;
+            this.age.Location = new System.Drawing.Point(130, 301);
+            this.age.Name = "age";
+            this.age.Size = new System.Drawing.Size(222, 20);
+            this.age.TabIndex = 4;
             // 
-            // maskedTextBox4
+            // contactnum
             // 
-            this.maskedTextBox4.BackColor = System.Drawing.Color.BurlyWood;
-            this.maskedTextBox4.Location = new System.Drawing.Point(130, 353);
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(222, 20);
-            this.maskedTextBox4.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox4.Location = new System.Drawing.Point(130, 406);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(222, 20);
-            this.textBox4.TabIndex = 6;
+            this.contactnum.BackColor = System.Drawing.Color.BurlyWood;
+            this.contactnum.Location = new System.Drawing.Point(130, 353);
+            this.contactnum.Name = "contactnum";
+            this.contactnum.Size = new System.Drawing.Size(222, 20);
+            this.contactnum.TabIndex = 7;
             // 
             // frm2StudNum
             // 
@@ -142,17 +132,6 @@
             this.frm2Age.TabIndex = 13;
             this.frm2Age.Text = "Age : ";
             // 
-            // frm2Add
-            // 
-            this.frm2Add.AutoSize = true;
-            this.frm2Add.BackColor = System.Drawing.Color.Transparent;
-            this.frm2Add.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frm2Add.Location = new System.Drawing.Point(43, 406);
-            this.frm2Add.Name = "frm2Add";
-            this.frm2Add.Size = new System.Drawing.Size(68, 18);
-            this.frm2Add.TabIndex = 15;
-            this.frm2Add.Text = "Address : ";
-            // 
             // frm2ConNum
             // 
             this.frm2ConNum.AutoSize = true;
@@ -173,9 +152,9 @@
             this.button1.FlatAppearance.BorderSize = 3;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(385, 99);
+            this.button1.Location = new System.Drawing.Point(130, 423);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 390);
+            this.button1.Size = new System.Drawing.Size(246, 78);
             this.button1.TabIndex = 16;
             this.button1.Text = "SUBMIT";
             this.button1.UseVisualStyleBackColor = false;
@@ -203,21 +182,21 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Gender :";
             // 
-            // maskedTextBox5
+            // bday
             // 
-            this.maskedTextBox5.BackColor = System.Drawing.Color.BurlyWood;
-            this.maskedTextBox5.Location = new System.Drawing.Point(130, 251);
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(222, 20);
-            this.maskedTextBox5.TabIndex = 18;
+            this.bday.BackColor = System.Drawing.Color.BurlyWood;
+            this.bday.Location = new System.Drawing.Point(130, 251);
+            this.bday.Name = "bday";
+            this.bday.Size = new System.Drawing.Size(222, 20);
+            this.bday.TabIndex = 18;
             // 
-            // textBox5
+            // gender
             // 
-            this.textBox5.BackColor = System.Drawing.Color.BurlyWood;
-            this.textBox5.Location = new System.Drawing.Point(130, 192);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(222, 20);
-            this.textBox5.TabIndex = 17;
+            this.gender.BackColor = System.Drawing.Color.BurlyWood;
+            this.gender.Location = new System.Drawing.Point(130, 192);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(222, 20);
+            this.gender.TabIndex = 17;
             // 
             // Form2
             // 
@@ -228,19 +207,17 @@
             this.ClientSize = new System.Drawing.Size(500, 613);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.maskedTextBox5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.bday);
+            this.Controls.Add(this.gender);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.frm2Add);
             this.Controls.Add(this.frm2ConNum);
             this.Controls.Add(this.frm2Age);
             this.Controls.Add(this.frm2LN);
             this.Controls.Add(this.frm2Prog);
             this.Controls.Add(this.frm2StudNum);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.contactnum);
+            this.Controls.Add(this.age);
+            this.Controls.Add(this.FullName);
             this.Controls.Add(this.studnum);
             this.Controls.Add(this.textBox1);
             this.Name = "Form2";
@@ -254,20 +231,18 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MaskedTextBox studnum;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.MaskedTextBox FullName;
+        private System.Windows.Forms.TextBox age;
+        private System.Windows.Forms.MaskedTextBox contactnum;
         private System.Windows.Forms.Label frm2StudNum;
         private System.Windows.Forms.Label frm2Prog;
         private System.Windows.Forms.Label frm2LN;
         private System.Windows.Forms.Label frm2Age;
-        private System.Windows.Forms.Label frm2Add;
         private System.Windows.Forms.Label frm2ConNum;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.MaskedTextBox bday;
+        private System.Windows.Forms.TextBox gender;
     }
 }

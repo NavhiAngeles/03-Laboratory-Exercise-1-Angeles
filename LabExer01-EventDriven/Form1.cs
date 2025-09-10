@@ -115,13 +115,13 @@ namespace LabExer01_EventDriven
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StudentInfoclass.SetFullName = FullName(textBox2.Text, textBox4.Text, textBox5.Text);
-            StudentInfoclass.SetStudentNum = StudentNumber(textBox1.Text);
-            StudentInfoclass.SetProgram = comboBox1.Text;
-            StudentInfoclass.SetGender = comboBox2.Text;
-            StudentInfoclass.SetContactNum = ContactNo(textBox6.Text);
-            StudentInfoclass.SetAge = Age(textBox3.Text);
-            StudentInfoclass.SetBirthDay = dateTimePicker1.Value.ToString("yyyyMM-dd");
+            Studentinfo.SetFullName = FullName(textBox2.Text, textBox4.Text, textBox5.Text);
+            Studentinfo.SetStudentNum = (int)StudentNumber(textBox1.Text);
+            Studentinfo.SetProgram = comboBox1.Text;
+            Studentinfo.SetGender = comboBox2.Text;
+            Studentinfo.SetContactNum =(int)ContactNo(textBox6.Text);
+            Studentinfo.SetAge = Age(textBox3.Text);
+            Studentinfo.SetBirthDay = dateTimePicker1.Value.ToString("yyyy-MM-dd");
 
             Form2 frm = new Form2();
             frm.ShowDialog();

@@ -14,6 +14,13 @@ namespace LabExer01_EventDriven
     {
 
 
+        studnum.Text = StudentInfoclass.SetStudentNo.ToString();
+        textBox1.Text = StudentInfoclass.SetFullName;
+        lblProgram.Text = StudentInfoclass.SetProgram;
+        bday.Text = StudentInfoclass.SetBirthDay;
+        gender.Text = StudentInfoclass.SetGender;
+        contactnum.Text = StudentInfoclass.SetContactNo.ToString();
+        age.Text = StudentInfoclass.SetAge.ToString();
 
 
         //private StudentInfoclass.DelegateString delProgram, delLastName, delFirstName, delMiddleName, delAddress, delGender, delBirthday;
