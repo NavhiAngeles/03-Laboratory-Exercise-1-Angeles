@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -118,6 +119,9 @@ namespace LabExer01_EventDriven
         {
             try
             {
+
+                String Studbb = "Data Source=DESKTOP-1S9DCFG\\SQLEXPRESS01;Initial Catalog=EDPDatabase;Integrated Security=True;TrustServerCertificate=True";
+
                 Studentinfo.SetFullName = FullName(textBox2.Text, textBox4.Text, textBox5.Text);
                 Studentinfo.SetStudentNum = (int)StudentNumber(textBox1.Text);
                 Studentinfo.SetProgram = comboBox1.Text;
@@ -125,6 +129,32 @@ namespace LabExer01_EventDriven
                 Studentinfo.SetContactNum = (int)ContactNo(textBox6.Text);
                 Studentinfo.SetAge = Age(textBox3.Text);
                 Studentinfo.SetBirthDay = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+
+                using (SqlConnection nav = new SqlConnection(Studbb))
+                {
+                    nav.Open();
+
+                    string db = @"INSERT INTO Student(
+                       StudentNo, Program, LastName, FirstName, MiddleName, Age, Birthday, ContactNo, Gender, FullName)
+                        VALUES (
+                       @StudentNo, @Program, @LastName, @FirstName, @MiddleName, @Age, @Birthday, @ContactNo, @Gender, @FullName)";
+
+                    using (SqlCommand utos = new SqlCommand(db, nav))
+                    {
+                        utos.Parameters.AddWithValue("@StudentNo", Studentinfo.SetStudentNum);
+                        utos.Parameters.AddWithValue("@Program", Studentinfo.SetProgram);
+                        utos.Parameters.AddWithValue("@LastName", textBox2.Text);
+                        utos.Parameters.AddWithValue("@FirstName", textBox4.Text);
+                        utos.Parameters.AddWithValue("@MiddleName", textBox5.Text);
+                        utos.Parameters.AddWithValue("@Age", Studentinfo.SetAge);
+                        utos.Parameters.AddWithValue("@Birthday", Studentinfo.SetBirthDay);
+                        utos.Parameters.AddWithValue("@ContactNo", Studentinfo.SetContactNum);
+                        utos.Parameters.AddWithValue("@Gender", Studentinfo.SetGender);
+                        utos.Parameters.AddWithValue("@FullName", Studentinfo.SetFullName);
+
+                        utos.ExecuteNonQuery();
+                    }
+                }
 
                 Form2 frm = new Form2();
                 frm.ShowDialog();
